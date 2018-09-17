@@ -15,7 +15,10 @@ function knest(connection, testFn) {
       }
     })
     .catch(e => {
-      if (e !== rolledBackAfterSuccess) console.error(e)
+      if (e !== rolledBackAfterSuccess) {
+        // console.error(e)
+        throw(e)
+      }
     })
 }
 
