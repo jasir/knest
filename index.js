@@ -1,6 +1,6 @@
 'use strict'
 
-const rolledBackAfterSuccess = {}
+const rolledBackAfterSuccess = new Error('rolledBackAfterSuccess')
 
 function knest(connection, testFn) {
   return connection
